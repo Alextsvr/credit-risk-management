@@ -1,0 +1,86 @@
+##############################
+# Python / venv
+##############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+venv/
+.env/
+.envrc
+
+##############################
+# Jupyter
+##############################
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Jupyter garbage
+*.ipynb_convert/
+*.nbconvert.ipynb
+
+##############################
+# Data (large raw data)
+##############################
+data/
+!data/README.md         # keep readme if present
+# allow only very small example files if needed
+!data/example_*.csv
+
+##############################
+# Artifacts (models, parquet, feature frames)
+##############################
+artifacts/
+reports/
+figs/
+
+# Important: sometimes you want to keep pipeline README
+!artifacts/README*.md
+!reports/README*.md
+
+# Parquet & huge datasets produced inside notebooks
+*.parquet
+*.pq
+*.csv
+*.xlsx
+*.zip
+*.gz
+
+# Model files
+*.pkl
+*.joblib
+*.sav
+*.h5
+
+##############################
+# ML experiments
+##############################
+*.json
+*.txt
+*.log
+
+# Keep only code notebooks & scripts
+notebooks/artifacts/
+!notebooks/*.ipynb
+
+##############################
+# Editor / IDE
+##############################
+.vscode/
+.idea/
+*.swp
+
+##############################
+# OS junk
+##############################
+.DS_Store
+Thumbs.db
+
+##############################
+# Cache
+##############################
+.cache/
+*.tmp
+*.temp
